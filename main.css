@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  background-color: #f1f1f148;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+}
+
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 3rem;
+  color: #3E497A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alg-sign {
+  color: #dfdfdf;
+  font-weight: bold;
+}
+
+@media (min-width: 40rem) {      
+      .logo {
+        width: 800px;
+        height: 800px;
+      }
+
+      .h1 {
+        font-size: 5rem;
+      }
+}
