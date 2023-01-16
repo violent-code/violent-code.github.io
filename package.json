@@ -31,7 +31,7 @@
     "eslint:check": "eslint \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "eslint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "author": "",
   "license": "MIT",
