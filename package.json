@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/devbridge/Front-End-Toolkit/issues"
   },
-  "homepage": "https://violent-code.github.io/prod/gh-pages",
+  "homepage": "https://violent-code.github.io",
   "devDependencies": {
     "@babel/core": "7.10.3",
     "@babel/plugin-proposal-class-properties": "7.10.4",
