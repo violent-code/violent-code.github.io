@@ -1,0 +1,44 @@
+{
+  "plugins": [],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "arrow-parens": "off",
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "max-len": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "lodash",
+            "message": "Import specific lodash methods instead."
+          }
+        ]
+      }
+    ],
+    "import/no-unresolved": 0,
+    "no-unused-vars": 0,
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "react/jsx-filename-extension": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "quotes": ["error", "single", { "avoidEscape": true }]
+  }
+}
