@@ -1,5 +1,4 @@
 {
-  "homepage": "https://violent-code.github.io/prod/gh-pages",
   "name": "devbridge-frontend",
   "version": "2.0.0",
   "repository": {
@@ -39,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/devbridge/Front-End-Toolkit/issues"
   },
-  "homepage": "https://github.com/devbridge/Front-End-Toolkit",
+  "homepage": "https://violent-code.github.io/prod/gh-pages",
   "devDependencies": {
     "@babel/core": "7.10.3",
     "@babel/plugin-proposal-class-properties": "7.10.4",
