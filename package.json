@@ -1,4 +1,5 @@
 {
+  "homepage": "http://violent-code.github.io/gh-pages",
   "name": "devbridge-frontend",
   "version": "2.0.0",
   "repository": {
@@ -31,14 +32,13 @@
     "eslint:check": "eslint \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "eslint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/devbridge/Front-End-Toolkit/issues"
   },
-  "homepage": "https://violent-code.github.io",
   "devDependencies": {
     "@babel/core": "7.10.3",
     "@babel/plugin-proposal-class-properties": "7.10.4",
