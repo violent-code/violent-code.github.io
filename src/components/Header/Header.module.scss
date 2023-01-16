@@ -1,0 +1,37 @@
+.header {
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 0 0 toRem(15) var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacer-xxl) var(--spacer-5xl);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+
+  &__logo-wrapper {
+    align-items: center;
+    color: var(--color-purple-400);
+    display: flex;
+    padding-right: var(--spacer-s);
+    text-decoration: none;
+
+    .logo-icon {
+      min-height: var(--spacer-5xl);
+      width: var(--spacer-5xl);
+    }
+
+    .logo-name {
+      font-size: var(--font-size-m);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--line-height-l);
+      margin: 0 0 0 var(--spacer-l);
+    }
+
+    &:focus-visible {
+      border-radius: 0.1rem;
+      outline: 0.2rem solid var(--color-purple-400);
+      outline-offset: var(--spacer-s);
+    }
+  }
+}

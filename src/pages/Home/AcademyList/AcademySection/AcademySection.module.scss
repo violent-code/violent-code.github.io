@@ -1,0 +1,241 @@
+.academy {
+  align-items: center;
+  display: flex;
+  gap: toRem(50);
+  justify-content: space-between;
+  width: 100%;
+
+  @include tablet-landscape {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: toRem(80);
+    justify-content: center;
+  }
+
+  &--developers {
+    @include tablet-landscape {
+      gap: toRem(50);
+    }
+  }
+
+  &--testers {
+    margin-top: toRem(141);
+  }
+
+  &--front-end {
+    margin-top: toRem(175);
+
+    @include desktop {
+      margin-top: toRem(150);
+    }
+  }
+
+  &--kids {
+    align-self: flex-start;
+    margin-top: toRem(120);
+  }
+}
+
+.academy-inverted {
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  text-align: right;
+
+  @include tablet-landscape {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.description-shared {
+  flex-basis: 50%;
+  min-width: toRem(380);
+
+  @include tablet-landscape {
+    flex-basis: 100%;
+    min-width: unset;
+  }
+}
+
+.section-images-shared {
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  position: relative;
+
+  @include tablet-landscape {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .section-images__path {
+    @include tablet-landscape {
+      display: none;
+    }
+  }
+}
+
+.developers {
+  &__section-images {
+    .section-images__path {
+      left: toRem(70);
+      position: absolute;
+      top: toRem(-260);
+      width: 100%;
+
+      @include desktop {
+        left: toRem(50);
+        top: toRem(-180);
+      }
+
+      @include desktop-small {
+        left: toRem(0);
+        top: toRem(-170);
+        width: 110%;
+      }
+    }
+
+    .section-images__illustration {
+      bottom: toRem(30);
+      left: toRem(100);
+      position: relative;
+      width: 67.5%;
+
+      @include desktop {
+        bottom: toRem(30);
+        left: toRem(50);
+        min-width: toRem(330);
+      }
+
+      @include desktop-small {
+        bottom: toRem(50);
+        left: toRem(30);
+        min-width: toRem(250);
+      }
+
+      @include tablet-landscape {
+        min-width: unset;
+        position: static;
+        width: 100%;
+      }
+
+      @include mobile-only {
+        display: none;
+      }
+    }
+  }
+}
+
+.testers {
+  &__section-images {
+    .section-images__path {
+      position: absolute;
+      right: toRem(70);
+      top: toRem(-100);
+      width: 100%;
+
+      @include desktop {
+        right: toRem(30);
+        width: 120%;
+      }
+
+      @include desktop-small {
+        right: 0;
+        top: toRem(-70);
+        width: 130%;
+      }
+    }
+
+    .section-images__illustration {
+      align-self: flex-start;
+      display: flex;
+      width: 55%;
+
+      @include desktop {
+        min-width: toRem(250);
+      }
+
+      @include desktop-small {
+        min-width: toRem(220);
+      }
+
+      @include tablet-landscape {
+        width: 100%;
+      }
+
+      @include mobile-only {
+        display: none;
+      }
+    }
+  }
+}
+
+.front-end {
+  &__section-images {
+    .section-images__illustration {
+      min-width: toRem(300);
+      width: 71%;
+
+      @include desktop {
+        min-width: toRem(270);
+      }
+
+      @include mobile-only {
+        display: none;
+      }
+    }
+  }
+}
+
+.kids {
+  &__section-images {
+    .section-images__path {
+      left: toRem(55);
+      position: absolute;
+      top: toRem(-40);
+      width: 100%;
+      z-index: var(--z-illustrations);
+
+      @include desktop {
+        top: toRem(-100);
+      }
+
+      @include desktop-small {
+        left: toRem(20);
+        top: toRem(-120);
+      }
+    }
+
+    .section-images__illustration {
+      align-self: flex-start;
+      display: flex;
+      left: toRem(55);
+      position: relative;
+      top: toRem(25);
+      width: 71.6%;
+
+      @include desktop {
+        left: toRem(25);
+        min-width: toRem(325);
+        top: toRem(-20);
+      }
+
+      @include desktop-small {
+        left: toRem(20);
+        min-width: toRem(270);
+        top: toRem(-80);
+      }
+
+      @include tablet-landscape {
+        position: static;
+      }
+
+      @include mobile-only {
+        display: none;
+      }
+    }
+  }
+}

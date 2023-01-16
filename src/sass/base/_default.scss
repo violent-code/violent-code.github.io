@@ -1,0 +1,62 @@
+/* Global element rules
+   Elements, that needs to be styled globally, should be styled here.
+   only native html elements/selectors should be here, if you have class styled in this file - consider separating it to another file.
+*/
+
+@use '/src/sass/utilities/mixins/' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+[aria-busy='true'] {
+  cursor: wait;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}

@@ -1,0 +1,47 @@
+.apply-section {
+  padding: toRem(182) 0 toRem(151);
+  position: relative;
+
+  &__img {
+    margin: 0;
+    padding: var(--spacer-6xl) 0 0;
+    width: 50%;
+
+    @include tablet-landscape {
+      width: 35%;
+    }
+
+    @include tablet-portrait {
+      margin-top: var(--spacer-m);
+      width: 60%;
+    }
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  &__path {
+    height: toRem(823);
+    position: absolute;
+    right: toRem(60);
+    stroke: var(--primary-color);
+    stroke-width: 2px;
+    width: toRem(207);
+    z-index: var(--z-paths);
+
+    @include tablet-landscape {
+      display: none;
+    }
+  }
+
+  &__particles {
+    position: absolute;
+    width: 80%;
+    z-index: var(--z-particles);
+
+    @include tablet-landscape {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.promo-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacer-5xl) 0;
+
+  @include tablet-landscape {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacer-xxl) 0 0 0;
+  width: 36%;
+
+  @include tablet-landscape {
+    padding: 0;
+    width: 100%;
+  }
+
+  &__heading {
+    @include h1-h2;
+
+    margin: 0;
+    white-space: pre-line;
+    @include word-wrap;
+  }
+
+  &__paragraph {
+    @include paragraph;
+
+    margin-bottom: var(--spacer-6xl);
+    margin-top: var(--spacer-4xl);
+
+    &--apply {
+      font-size: var(--font-size-l);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--line-height-xl);
+      margin-top: toRem(70);
+    }
+  }
+}

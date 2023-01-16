@@ -1,0 +1,52 @@
+/* Themes */
+[data-theme='purple'] {
+  --primary-color: var(--color-purple-400);
+  --button-color: var(--color-light-purple-400);
+  --button-hover-color: var(--color-light-purple-500);
+  --button-active-color: var(--color-light-purple-300);
+  --button-focus-tab-color: var(--color-accent-orange-400);
+  --button-focus-border-color: var(--color-light-purple-500);
+  --expandable-card-hover-color: var(--color-purple-350);
+}
+
+[data-theme='blue'] {
+  --primary-color: var(--color-blue-400);
+  --button-color: var(--color-blue-200);
+  --button-hover-color: var(--color-blue-300);
+  --button-active-color: var(--color-blue-100);
+  --button-focus-tab-color: var(--color-accent-orange-400);
+  --button-focus-border-color: var(--color-blue-300);
+  --admission-image-location: var(--color-blue-150);
+  --expandable-card-hover-color: var(--color-blue-350);
+}
+
+[data-theme='green'] {
+  --primary-color: var(--color-green-400);
+  --button-color: var(--color-green-200);
+  --button-hover-color: var(--color-green-100);
+  --button-active-color: var(--color-green-300);
+  --button-focus-tab-color: var(--color-accent-orange-400);
+  --button-focus-border-color: var(--color-green-100);
+  --admission-image-location: var(--color-accent-green-300);
+  --expandable-card-hover-color: var(--color-green-350);
+}
+
+[data-theme='red'] {
+  --primary-color: var(--color-red-400);
+  --button-color: var(--color-red-200);
+  --button-hover-color: var(--color-red-100);
+  --button-active-color: var(--color-red-300);
+  --button-focus-tab-color: var(--color-accent-orange-400);
+  --button-focus-border-color: var(--color-red-100);
+  --admission-image-location: var(--color-red-200);
+  --expandable-card-hover-color: var(--color-red-350);
+}
+
+[data-theme='kids'] {
+  --primary-color: var(--color-accent-orange-400);
+  --button-color: var(--color-accent-green-400);
+  --button-hover-color: var(--color-accent-green-300);
+  --button-active-color: var(--color-accent-green-300);
+  --button-focus-tab-color: var(--color-accent-green-300);
+  --button-focus-border-color: var(--color-accent-green-300);
+}

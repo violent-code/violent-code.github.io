@@ -1,0 +1,39 @@
+.loading-spinner {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  margin: 0;
+  width: 4rem;
+
+  &::after {
+    animation: loading 0.75s ease infinite;
+    border: 6px solid var(--color-purple-150);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    content: '';
+    height: 100%;
+    width: 100%;
+  }
+
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::after {
+      animation: none;
+      border: 0;
+      color: var(--primary-color);
+      content: 'Loading...';
+      font-size: toRem(24);
+      transform: translateX(-50%);
+    }
+  }
+}

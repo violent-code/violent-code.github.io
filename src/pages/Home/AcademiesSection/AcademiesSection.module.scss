@@ -1,0 +1,69 @@
+.academies-section {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  margin-top: toRem(410);
+  padding: toRem(120);
+  scroll-margin-top: toRem(96);
+  text-align: center;
+
+  @include tablet-landscape {
+    margin-top: toRem(310);
+    padding: toRem(120) toRem(80);
+  }
+
+  @include tablet-portrait {
+    padding: toRem(120) 0;
+  }
+
+  @include mobile-only {
+    margin-top: toRem(210);
+  }
+
+  &__heading {
+    @include h1-h2;
+    @include word-wrap;
+  }
+
+  &__paragraph {
+    @include paragraph;
+
+    margin-bottom: var(--spacer-4xl);
+    margin-top: var(--spacer-3xl);
+  }
+
+  &__vertical-line {
+    border-left: var(--border-width-m) solid var(--primary-color);
+    height: toRem(48);
+    margin-bottom: var(--spacer-3xl);
+  }
+
+  &__button {
+    animation: upAndDown 1.3s ease-in-out infinite;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    height: var(--spacer-6xl);
+    width: var(--spacer-6xl);
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes upAndDown {
+      0% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(toRem(11));
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+}

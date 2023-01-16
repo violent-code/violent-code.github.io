@@ -1,0 +1,61 @@
+.filter-wrapper {
+  align-items: center;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius-l);
+  display: inline-flex;
+  gap: var(--spacer-s);
+  padding: var(--spacer-s);
+  transition: all 0.3s;
+  width: fit-content;
+
+  :not(.button--active) {
+    background: var(--color-white);
+    color: var(--color-grey-400);
+
+    &:hover {
+      background: var(--button-color);
+      color: var(--color-white);
+    }
+  }
+}
+
+.button {
+  align-items: center;
+  background: var(--button-color);
+  border: 0;
+  border-radius: var(--border-radius-l);
+  color: var(--color-white);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  height: toRem(48);
+  justify-content: center;
+  line-height: var(--line-height-xl);
+  padding: toRem(12.5) var(--spacer-xl);
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: fit-content;
+
+  &:active {
+    background: var(--button-active-color);
+  }
+
+  &:focus-visible {
+    outline: toRem(4) dashed var(--button-focus-tab-color);
+    outline-offset: 0;
+  }
+
+  &:hover {
+    background: var(--button-hover-color);
+
+    &:active {
+      background: var(--button-active-color);
+    }
+  }
+
+  @include tablet-portrait {
+    align-self: center;
+  }
+}

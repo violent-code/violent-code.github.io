@@ -1,0 +1,75 @@
+.testimonial-modal {
+  align-items: flex-start;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  height: toRem(500);
+  max-height: toRem(500);
+  overflow-y: auto;
+  padding: toRem(35) toRem(30);
+  text-align: center;
+  width: toRem(800);
+
+  .testimonial-modal__header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+  }
+
+  &__graduate {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__graduate-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--spacer-l);
+  }
+
+  &__photo {
+    background: var(--color-green-200);
+    border-radius: 50%;
+    height: toRem(78);
+    margin: 0 0 toRem(2);
+    width: toRem(78);
+  }
+
+  &__close-button {
+    align-items: flex-end;
+    cursor: pointer;
+    fill: var(--primary-color);
+    height: 22px;
+    stroke: var(--primary-color);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: toRem(2);
+    width: toRem(22);
+  }
+
+  &__message {
+    font-size: var(--font-size-m);
+    height: 100%;
+    line-height: var(--line-height-xl);
+    margin: var(--spacer-xxl) var(--spacer-l) 0;
+    overflow: auto;
+    text-align: left;
+  }
+
+  &__graduate-name {
+    font-size: toRem(20);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-m);
+    margin: 0 0 toRem(7);
+  }
+
+  &__academy {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-m);
+    margin: 0;
+  }
+}

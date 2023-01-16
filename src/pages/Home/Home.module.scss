@@ -1,0 +1,11 @@
+.academy-list-wrapper {
+  padding: toRem(300) 0;
+
+  @include mobile-only {
+    padding: toRem(150) 0 0;
+  }
+}
+
+.media-section-wrapper {
+  padding: toRem(190) 0 toRem(138);
+}
